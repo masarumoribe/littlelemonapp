@@ -1,0 +1,60 @@
+.hero{
+    background-color: #495E57;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 150px;
+}
+
+.title{
+    color: #f4ce14;
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.chicago{
+    /* padding-left: 150px; */
+    color: white;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.description{
+    padding-top: 30px;
+    /* padding-left: 150px; */
+    color: white;
+    font-size: 2rem;
+    width: 30vw;
+    font-weight: 100;
+}
+
+.entree-img-container{
+    right: 0;
+}
+
+.entree-img{
+    margin-top: 10px;
+    margin-left: 40px;
+    position: relative;
+    border-radius: 20px;
+    object-fit: cover;
+    height: 80vh;
+}
+
+.reserve-btn{
+    font-family: 'Markazi Text', serif;
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #333;
+    background-color: #f4ce14;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: 2px solid #495E57;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.reserve-btn:hover{
+    background-color: #495E57;
+    color: #f4ce14;
+    border: 2px solid #f4ce14;
+}

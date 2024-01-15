@@ -1,0 +1,11 @@
+.specials{
+    background-color: white;
+    height: 90vh;
+}
+
+.specials-title{
+    font-size: 4rem;
+    color: #333;
+    margin: 200px 150px;
+    font-weight: 200;
+}

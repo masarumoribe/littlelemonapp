@@ -1,27 +1,28 @@
 import logo from './assets/Logo.png'
+import './Nav.css'
 
 function Nav() {
     return (
-        <nav>
-        <img alt="Little Lemon restaurant logo" src={logo}></img>
-        <ul>
+        <nav className='nav'>
+        <img alt="Little Lemon restaurant logo" src={logo} className='logo'></img>
+        <ul className='nav-links'>
           <li>
-            <a href='#home'>HOME</a>
+            <a className='nav-link' href='#home'>Home</a>
           </li>
           <li>
-            <a href='#about'>ABOUT</a>
+            <a className='nav-link' href='#about'>About</a>
           </li>
           <li>
-            <a href='#menu'>MENU</a>
+            <a className='nav-link' href='#menu'>Menu</a>
           </li>
           <li>
-            <a href='#reservations'>RESERVATIONS</a>
+            <a className='nav-link' href='#reservations'>Reservations</a>
           </li>
           <li>
-            <a href='#order'>ORDER ONLINE</a>
+            <a className='nav-link' href='#order'>Order online</a>
           </li>
           <li>
-            <a href='#login'>LOGIN</a>
+            <button className='login-btn'>Login</button>
           </li>
         </ul>
       </nav>

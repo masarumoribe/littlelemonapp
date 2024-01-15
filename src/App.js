@@ -1,15 +1,15 @@
 import './App.css';
 import Nav from './Nav'
-import Header from './Header'
-import Main from './Main'
+import Hero from './Hero'
+import Specials from './Specials'
 import Footer from './Footer'
 
 function App() {
   return (
     <>
        <Nav />
-       <Header />
-       <Main />
+       <Hero />
+       <Specials />
        <Footer />
     </>
   );
