@@ -38,7 +38,7 @@
     position: relative;
     border-radius: 20px;
     object-fit: cover;
-    height: 80vh;
+    height: 40vw;
 }
 
 .reserve-btn{
@@ -57,4 +57,33 @@
     background-color: #495E57;
     color: #f4ce14;
     border: 2px solid #f4ce14;
+}
+
+@media only screen and (max-width: 800px) {
+    .hero{
+        flex-direction: column;
+        padding: 30px;
+        height: 100%;
+    }
+
+    .title{
+        font-size: 3rem;
+    }
+
+    .chicago{
+        font-size: 2rem;
+    }
+
+    .description{
+        width: 80vw;
+        font-size: 2rem;
+    }
+    
+    .entree-img{
+        display: none;
+    }
+
+    .hero div{
+        align-self: center;
+    }
 }
