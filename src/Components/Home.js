@@ -5,6 +5,7 @@ import Chicago from './Chicago'
 import Footer from './Footer'
 
 function Home() {
+
   return (
     <>
        <Hero />

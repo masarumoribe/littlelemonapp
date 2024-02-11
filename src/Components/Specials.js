@@ -1,7 +1,7 @@
 import './Specials.css'
-import greekSalad from './assets/greekSalad.jpg'
-import kebab from './assets/kebab.jpg'
-import lemonCake from './assets/lemonDessert.jpg'
+import greekSalad from '../assets/greekSalad.jpg'
+import kebab from '../assets/kebab.jpg'
+import lemonCake from '../assets/lemonDessert.jpg'
 
 function Specials() {
     return (

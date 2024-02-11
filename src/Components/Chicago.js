@@ -1,6 +1,6 @@
 import './Chicago.css'
-import cocktailImg from './assets/cocktail.jpg'
-import restaurantExterior from './assets/restaurantExterior.jpg'
+import cocktailImg from '../assets/cocktail.jpg'
+import restaurantExterior from '../assets/restaurantExterior.jpg'
 
 function Chicago() {
     return(

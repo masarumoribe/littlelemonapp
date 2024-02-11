@@ -1,6 +1,6 @@
-import logo from './assets/logo.png'
+import logo from '../assets/logo.png'
 import './Nav.css'
-import BookingPage from './BookingPage';
+// import BookingPage from './BookingPage';
 import { Link } from 'react-router-dom';
 
 function Nav() {

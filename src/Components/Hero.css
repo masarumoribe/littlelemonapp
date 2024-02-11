@@ -42,6 +42,7 @@
 }
 
 .reserve-btn{
+    display: inline-block;
     font-family: 'Markazi Text', serif;
     font-size: 2rem;
     margin-top: 20px;
