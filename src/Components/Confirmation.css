@@ -1,0 +1,26 @@
+.confirmation-screen{
+    background-color: #495E57;
+    padding: 0 150px;
+    text-align: center;
+    color: white;
+    height: 90vh;
+}
+
+.confirmation-message{
+    padding: 100px 0 50px;
+    font-size: 2.5rem;
+    color: #f4ce14;
+}
+
+.confirmation-screen h2{
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.confirmation-screen h2 span{
+    display: inline-block;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 100;
+}

@@ -6,9 +6,25 @@
 }
 
 .res-title{
-    padding: 100px 0 50px;
+    padding: 100px 0 0;
     font-size: 4rem;
     color: #f4ce14;
+}
+
+hr.separator{
+    margin: 30px 0;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-top: 8px solid #333;
+    border-radius: 5px;
+}
+
+.res-subtitle{
+    color: #f4ce14;
+    font-size: 2.7rem;
+    font-weight: 100;
+    margin-bottom: 20px;
 }
 
 .res-form{
@@ -35,7 +51,26 @@ input, select{
     border-radius: 5px;
 }
 
+span{
+    font-size: 1.5rem;
+    color: rgb(211, 102, 29);
+    display: none;
+}
+
+input:invalid[focused = "true"] ~ span{
+    display: block;
+}
+
+select:invalid[focused = "true"] ~ span{
+    display: block;
+}
+
+input:invalid[focused = "true"], select:invalid[focused = "true"]{
+    border: 3px solid rgb(211, 102, 29);
+}
+
 .res-submit{
+    font-family: 'Markazi Text', serif;
     margin: 50px 0;
     font-size: 2rem;
     color: #333;

@@ -1,6 +1,7 @@
-import { useReducer, useEffect } from 'react'
+import { useReducer} from 'react'
 import BookingPage from './BookingPage'
-import ConfirmedBooking from './ConfirmedBooking'
+import BookingConfirmed from './BookingConfirmed'
+import Confirmation from './Confirmation'
 import Nav from './Nav'
 import Home from './Home'
 import Hero from './Hero'
@@ -9,7 +10,7 @@ import Testimonials from './Testimonials'
 import Order from './Order';
 import Chicago from './Chicago'
 import Footer from './Footer'
-import {Routes, Route, useNavigate, Navigate} from 'react-router-dom'
+import {Routes, Route, useNavigate} from 'react-router-dom'
 
 const fetchAPI = function(){
   let result = [];
@@ -52,10 +53,9 @@ function Main() {
   const navigate = useNavigate();
 
   const submitForm = function(formData) {
-    if(submitAPI(formData)){
-      navigate("/booking-confirmed")
+    if(submitAPI()){
+      navigate("/booking-confirmation", {state: {formData}})
     }
-    console.log(formData)
   }
 
   return (
@@ -67,10 +67,12 @@ function Main() {
         <Route path='/specials' element={<Specials />} />
         <Route path='/testimonials' element={<Testimonials />} />
         <Route path='/booking' element={<BookingPage state={state} availableTimes={state.times} dispatch={dispatch} submitForm={submitForm}/>} />
-        <Route path='/booking-confirmed' element={<ConfirmedBooking />} />
+        <Route path='/booking-confirmation' element={<Confirmation />} />
+        <Route path='/booking-confirmed' element={<BookingConfirmed />} />
         <Route path='/about' element={<Chicago />} />
         <Route path='/order' element={<Order />} />
        </Routes>
+       <Footer />
     </main>
   );
 }

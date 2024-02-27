@@ -1,6 +1,6 @@
-import { fireEvent, render, renderHook, screen, act } from '@testing-library/react';
+import { fireEvent, render, screen, act } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import Main, { updateTimes, initializeTimes} from '../Components/Main';
+import Main, { updateTimes} from '../Components/Main';
 
 
 test('initializeTimes returns the correct initial value', () => {
@@ -16,7 +16,7 @@ test('initializeTimes returns the correct initial value', () => {
 
   const selectTimeInput = screen.getByLabelText(/choose time/i)
 
-  expect(selectTimeInput.value).toEqual("17:00");
+  expect(selectTimeInput.value).toEqual("");
 
 });
 
